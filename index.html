@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velvet &amp; Bloom — Beauty Studio on Linden Avenue</title>
+  <meta name="description" content="Velvet &amp; Bloom is a calm neighbourhood beauty studio for haircuts, colour, nails, facials and brows. Unhurried appointments, gentle hands, cruelty-free products.">
+  <meta name="theme-color" content="#2a1f25">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: change the families here and in --font-heading / --font-body (css/style.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600&display=swap">
+
+  <link rel="preload" href="assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Mark that JS is available before first paint, so hidden/animated states never hide content without JS -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ 1. Header ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Velvet and Bloom Beauty Studio, back to top">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <circle cx="16" cy="16" r="16" fill="currentColor"/>
+          <g fill="#fbf7f5">
+            <ellipse cx="16" cy="10.2" rx="3.2" ry="4.6"/>
+            <ellipse cx="16" cy="21.8" rx="3.2" ry="4.6"/>
+            <ellipse cx="10.2" cy="16" rx="4.6" ry="3.2"/>
+            <ellipse cx="21.8" cy="16" rx="4.6" ry="3.2"/>
+          </g>
+          <circle cx="16" cy="16" r="2.4" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Velvet &amp; Bloom</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 2. Hero (background image: --hero-image in css/style.css) ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Hair · Nails · Skin</p>
+          <h1 id="hero-title">Feel like yourself, only brighter</h1>
+          <p class="hero-sub">A calm little studio for cuts, colour, nails and facials. Unhurried appointments, gentle hands and products we'd happily use ourselves.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book an appointment</a>
+            <a href="#services" class="btn btn-outline-light">See services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. About ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="assets/about.jpg" alt="Stylist blow-drying a client's hair with a round brush" width="800" height="1000" loading="lazy">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-title">A studio built around you</h2>
+          <p>Velvet &amp; Bloom began in 2018, when stylist Elena Ruiz turned a sunny former flower shop on Linden Avenue into four chairs, two nail stations and one very good kettle.</p>
+          <p>We keep our books small on purpose. Every appointment starts on time, nobody feels rushed, and you leave with advice you can actually use at home.</p>
+          <ul class="about-stats">
+            <li><span class="stat-value">4.9★</span><span class="stat-label">average rating</span></li>
+            <li><span class="stat-value">7</span><span class="stat-label">stylists &amp; therapists</span></li>
+            <li><span class="stat-value">100%</span><span class="stat-label">cruelty-free products</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. Services & prices ============ -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Services &amp; prices</h2>
+          <p>Hair prices depend on length and thickness. Your stylist confirms the final price at the consultation.</p>
+        </header>
+
+        <div class="menu-categories">
+          <div class="menu-category reveal">
+            <h3>Hair</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Cut &amp; Blow-dry</h4>
+                  <span class="menu-item-price">$65</span>
+                </div>
+                <p class="menu-item-desc">Consultation, wash, precision cut and a smooth finish. 60 min.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Balayage <span class="menu-tag">Most loved</span></h4>
+                  <span class="menu-item-price">from $180</span>
+                </div>
+                <p class="menu-item-desc">Hand-painted, soft and natural colour that grows out beautifully. 3 hrs.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Root Colour</h4>
+                  <span class="menu-item-price">$85</span>
+                </div>
+                <p class="menu-item-desc">Full root touch-up with gloss and blow-dry. 90 min.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Blow-dry &amp; Style</h4>
+                  <span class="menu-item-price">$40</span>
+                </div>
+                <p class="menu-item-desc">Bouncy volume, sleek straight or soft waves for any occasion. 40 min.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-category reveal">
+            <h3>Nails</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Gel Manicure</h4>
+                  <span class="menu-item-price">$45</span>
+                </div>
+                <p class="menu-item-desc">Shape, cuticle care and long-lasting gel colour. 50 min.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Spa Pedicure</h4>
+                  <span class="menu-item-price">$55</span>
+                </div>
+                <p class="menu-item-desc">Warm soak, gentle scrub, massage and polish. 60 min.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-category reveal">
+            <h3>Skin &amp; Brows</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Signature Facial</h4>
+                  <span class="menu-item-price">$90</span>
+                </div>
+                <p class="menu-item-desc">Deep cleanse, exfoliation, mask and face massage tailored to your skin. 60 min.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-head">
+                  <h4 class="menu-item-name">Brow Shape &amp; Tint</h4>
+                  <span class="menu-item-price">$35</span>
+                </div>
+                <p class="menu-item-desc">Wax, tweeze and tint for brows that frame your face. 30 min.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. Gallery (images: assets/gallery-1…6) ============ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">Inside the studio</h2>
+        </header>
+
+        <ul class="gallery" data-reveal-stagger>
+          <li class="gallery-item reveal"><img src="assets/gallery-1.jpg" alt="Long blonde balayage waves after a colour appointment" width="1000" height="1000" loading="lazy"></li>
+          <li class="gallery-item reveal"><img src="assets/gallery-2.jpg" alt="Fresh manicure in a soft pink shade" width="800" height="800" loading="lazy"></li>
+          <li class="gallery-item reveal"><img src="assets/gallery-3.jpg" alt="Styling stations with round mirrors" width="800" height="800" loading="lazy"></li>
+          <li class="gallery-item reveal"><img src="assets/gallery-4.jpg" alt="Client relaxing during a facial mask treatment" width="800" height="800" loading="lazy"></li>
+          <li class="gallery-item reveal"><img src="assets/gallery-5.jpg" alt="Stylist curling a client's hair" width="800" height="800" loading="lazy"></li>
+          <li class="gallery-item reveal"><img src="assets/gallery-6.jpg" alt="Skincare cream and serum with eucalyptus on marble" width="800" height="800" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 6. Reviews ============ -->
+    <section class="section section-alt" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2 id="reviews-title">Kind words from our clients</h2>
+        </header>
+
+        <ul class="reviews" data-reveal-stagger>
+          <li class="reveal">
+            <figure class="review">
+              <p class="review-stars" role="img" aria-label="Rated 5 out of 5">★★★★★</p>
+              <blockquote>
+                <p>Elena is a colour wizard. My balayage still looks natural three months later, and she kindly talked me out of going too blonde.</p>
+              </blockquote>
+              <figcaption>
+                <span class="review-name">Priya S.</span>
+                <span class="review-meta">Colour client since 2020</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="reveal">
+            <figure class="review">
+              <p class="review-stars" role="img" aria-label="Rated 5 out of 5">★★★★★</p>
+              <blockquote>
+                <p>The calmest hour of my month. The spa pedicure is pure bliss, and my gel nails last a solid three weeks every time.</p>
+              </blockquote>
+              <figcaption>
+                <span class="review-name">Hannah W.</span>
+                <span class="review-meta">Monthly nails regular</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="reveal">
+            <figure class="review">
+              <p class="review-stars" role="img" aria-label="Rated 5 out of 5">★★★★★</p>
+              <blockquote>
+                <p>Booked a facial before my sister's wedding. My skin glowed in every photo, and the whole team made me feel so looked after.</p>
+              </blockquote>
+              <figcaption>
+                <span class="review-name">Olivia R.</span>
+                <span class="review-meta">Bridesmaid &amp; new regular</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 7. Hours & Location ============ -->
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Visit us</p>
+          <h2 id="location-title">Hours &amp; location</h2>
+        </header>
+
+        <div class="location-grid">
+          <div class="location-info">
+            <div class="info-card reveal">
+              <h3>Opening hours</h3>
+              <dl class="hours">
+                <div><dt>Tue – Fri</dt><dd>9:00 am – 7:00 pm</dd></div>
+                <div><dt>Saturday</dt><dd>9:00 am – 5:00 pm</dd></div>
+                <div><dt>Sun – Mon</dt><dd>Closed</dd></div>
+              </dl>
+            </div>
+            <div class="info-card reveal">
+              <h3>Find us</h3>
+              <address>
+                48 Linden Avenue<br>
+                Fairview, 30412<br>
+                <a href="tel:+15550127730">(555) 012-7730</a>
+              </address>
+              <p class="info-note">Free parking in the courtyard behind the studio.</p>
+            </div>
+          </div>
+
+          <!-- Map placeholder. To use a real map, replace this <div> with the Google Maps
+               embed <iframe> (Share → Embed a map) and keep class="map" for the sizing. -->
+          <div class="map map-placeholder reveal" role="img" aria-label="Map placeholder showing Velvet and Bloom at 48 Linden Avenue">
+            <div class="map-pin">
+              <svg viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" focusable="false">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+              </svg>
+              <span>Velvet &amp; Bloom</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. Contact / Booking ============ -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-text reveal">
+          <p class="eyebrow">Booking</p>
+          <h2 id="contact-title">Book your visit</h2>
+          <p>Tell us which service you'd like and when suits you. We'll confirm by email within a few hours, or give us a call for same-day appointments.</p>
+          <ul class="contact-list">
+            <li><span>Email</span> <a href="mailto:hello@velvetandbloom.example">hello@velvetandbloom.example</a></li>
+            <li><span>Phone</span> <a href="tel:+15550127730">(555) 012-7730</a></li>
+          </ul>
+        </div>
+
+        <!-- Demo form: validated in js/main.js, nothing is sent to a server -->
+        <form class="form reveal" id="contact-form" novalidate>
+          <p class="form-note">All fields are required.</p>
+
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="field-error" id="name-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+            <p class="field-error" id="email-error"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Service and preferred time</label>
+            <textarea id="message" name="message" rows="4" placeholder="e.g. Gel manicure, Friday afternoon" required aria-describedby="message-error"></textarea>
+            <p class="field-error" id="message-error"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Request booking</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 9. Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo logo-light" aria-label="Velvet and Bloom Beauty Studio, back to top">
+          <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <circle cx="16" cy="16" r="16" fill="currentColor"/>
+            <g fill="#2a1f25">
+              <ellipse cx="16" cy="10.2" rx="3.2" ry="4.6"/>
+              <ellipse cx="16" cy="21.8" rx="3.2" ry="4.6"/>
+              <ellipse cx="10.2" cy="16" rx="4.6" ry="3.2"/>
+              <ellipse cx="21.8" cy="16" rx="4.6" ry="3.2"/>
+            </g>
+            <circle cx="16" cy="16" r="2.4" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">Velvet &amp; Bloom</span>
+        </a>
+        <p>Hair, nails and skin care on Linden Avenue. Unhurried, friendly and always on time.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services &amp; prices</a></li>
+          <li><a href="#location">Hours &amp; location</a></li>
+          <li><a href="#contact">Book a visit</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h2 class="footer-title">Follow us</h2>
+        <!-- Replace href="#" with the real profile links -->
+        <ul class="social-list">
+          <li>
+            <a class="social-link" href="#" aria-label="Velvet and Bloom on Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#" aria-label="Velvet and Bloom on Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="currentColor">
+                <path d="M13.5 21v-7.5H16l.5-3.5h-3V8c0-1 .4-1.6 1.7-1.6H17V3.3c-.3 0-1.4-.2-2.6-.2-2.6 0-4.4 1.6-4.4 4.5V10H7.3v3.5H10V21z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#" aria-label="Velvet and Bloom on TikTok">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.4 4.6 5 4.8"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Velvet &amp; Bloom Beauty Studio. All rights reserved.</p>
+      <p>Fictional business, made for a portfolio. Photos: <a href="https://unsplash.com/">Unsplash</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
